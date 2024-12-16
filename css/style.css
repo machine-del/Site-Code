@@ -1,0 +1,99 @@
+p {
+    margin: 0;
+}
+
+body {
+    background-color: #3182CE;
+}
+
+header {
+    display: flex;
+}
+
+.container {
+    margin-left: 20px;
+    margin-top: 45px;
+    margin-right: 45px;
+}
+
+.header-text-up {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.header-text-down {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 5.5px;
+}
+
+.input {
+    width: 200px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    margin-left: auto;
+    display: flex;
+}
+
+.input-img {
+    width: 17px;
+    height: 17px;
+    background-image: url('/images/icons/icon-header-search.png');
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.input-text {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 12px;
+    margin-left: 20px;
+    color: #A0AEC0;
+}
+
+.my-room {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 34px;
+}
+
+.my-room-img {
+    background-image: url('/images/icons/icon-header-user.png');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.my-room-text {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color:#FFFFFF;
+}
+
+.header-settings-img {
+    margin-top: 13px;
+    margin-left: 15px;
+    width: 17px;
+    height: 17px;
+}
+
+.header-notifications-img {
+    margin-top: 13px;
+    margin-left: 15px;
+    width: 17px;
+    height: 17px;
+}
