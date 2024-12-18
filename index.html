@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,72 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="header-text">
-                <p class="header-text-up">Страницы  /  Выставление счетов</p>
-                <p class="header-text-down">Выставление счетов</p>
+    <header class="header">
+        <div class="header__container">
+            <div class="header-box">
+                <nav class="header__breadcrumbs breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">Страницы</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Выставление счетов</a>
+                </nav>
+                <h1 class="header__title">Выставление счетов</h1>
             </div>
-            <div class="input">
-                <div class="input-img"></div>
-                <p class="input-text">Введите</p>
+            <div class="header__controls controls">
+                <div class="control__search">
+                    <span class="search__icon"></span>
+                    <input type="text" class="search__input" placeholder="Введите" />
+                </div>
+                <div class="controls__actions actions">
+                    <img src="/images/icons/icon-header-user.png" width="12" height="12" alt="user">
+                    <a href="#" class="actions__link">Войти</a>
+                    <button class="actions__button settings">
+                        <img src="/images/icons/icon-header-setting.png" alt="#">
+                    </button>
+                    <button class="actions__button notifications">
+                        <img src="/images/icons/icon-header-notifications.png" alt="#">
+                    </button>
+                </div>
             </div>
-            <div class="my-room">
-                <div class="my-room-img"></div>
-                <div class="my-room-text">Войти</div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="control-panel">
+            <div class="control-panel__container">
+                <div class="control-panel__info">
+                    <div class="control-panel__item">
+                        <nav>
+                            <ul>
+                                <li><span class="active-img"><img src="/images/icons/icon-left-panel-home.png" alt="#"></span><a href="#" class="active">Панель управления</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-chart.png" alt="#"></span><a href="#">Таблицы</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-card.png" alt="#"></span><a href="#">Выставление счетов</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-build.png" alt="#"></span><a href="#">RTL</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="control-panel__item">
+                        <div class="control-panel--title">
+                            Страницы аккаунта
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><span><img src="/images/icons/icon-left-panel-user.png" alt="#"></span><a href="#">Профиль</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-document.png" alt="#"></span><a href="#">Войти</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-rocket.png" alt="#"></span><a href="#">Зарегистрироваться</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="control-panel__item">
+                        <img class="documentation" src="images/icons/icon-left-panel-documentation.png" alt="#">
+                        <div class="control-panel__subtitle">Нужна помощь?</div>
+                        <button class="control-panel__button">Документация</button>
+                    </div>
+                </div>
             </div>
-            <img class="header-settings-img" src="images/icons/icon-header-setting.png" alt="">
-            <img class="header-notifications-img" src="images/icons/icon-header-notifications.png" alt="">
-        </header>
-    </div>
+        </section>
+    </main>
 </body>
+
 </html>
