@@ -190,7 +190,7 @@ main {
 .control-panel__item ul li a {
     font-family: Helvetica;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 18px;
     color: #a0aec0;
 }
@@ -221,7 +221,7 @@ main {
     margin-top: 30px;
     font-family: Helvetica;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 18px;
     color: #2d3748;
     text-transform: uppercase;
@@ -230,11 +230,10 @@ main {
 .control-panel__subtitle {
     font-family: Helvetica;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 19.6px;
     color: #2d3748;
     text-align: center;
-    text-transform: uppercase;
 }
 
 .control-panel__button {
@@ -248,7 +247,7 @@ main {
     color: #fff;
     font-family: Helvetica;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 10px;
 }
 
@@ -259,44 +258,62 @@ main {
     background-size: cover;
     width: 461px;
     height: 241px;
+    color: #fff;
 }
 
 .mastercard__container {
     display: flex;
-}
-
-.mastercard__box {
-    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
     height: 100%;
-}
-
-.mastercard__info {
 }
 
 .mastercard__image {
     display: flex;
     justify-content: flex-end;
-    
+}
+
+.mastercard__image img {
+    width: 50px;
+    height: auto;
 }
 
 .mastercard__item {
     display: flex;
     flex-direction: column;
-    color: #fff;
+    gap: 10px;
 }
 
 .mastercard--number {
-
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
 }
 
 .mastercard__tabs {
-
+    display: flex;
+    gap: 22px;
 }
 
-.mastercard__valid {
-
+.mastercard__valid, .mastercard__cvv {
+    display: flex;
+    flex-direction: column;
 }
 
-.mastercard__cvv {
+.mastercard__valid span:first-child, 
+.mastercard__cvv span:first-child {
+    font-family: Helvetica;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
 
+.mastercard__valid span:last-child, 
+.mastercard__cvv span:last-child {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
 }
