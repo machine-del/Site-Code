@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to top, #FFFFFF 65%, #3182CE 45%);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    color: #fff;
+    margin: 44px 45px 0px 20px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.breadcrumbs {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.breadcrumbs__link {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumbs__separator {
+    margin: 0 5px;
+}
+
+.header__title {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control__search {
+    position: relative;
+    display: inline-block;
+}
+
+.search__input {
+    padding-left: 40px; 
+    border: none;
+    width: 199px;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search__input::placeholder {
+    color: #a0aec0;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.search__icon {
+    position: absolute; 
+    top: 50%;
+    left: 10px; 
+    transform: translateY(-50%); 
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/icons/icon-header-search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.search__button {
+    background: #fff;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.actions__link {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.actions__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.settings {
+    padding: 0px 17px;
+}
+
+main {
+    margin: 37px 0px 0px 20px;
+    display: flex;
+}
+
+.control-panel {
+    width: 265px;
+    height: 100%;    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 5px 14px #0000000D;
+}
+
+.control-panel__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-panel__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #2d3748 !important;
+}
+
+.active-img {
+    background-color: #3182CE;
+    border-radius: 8px;
+}
+
+.control-panel__item ul li span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-panel__item ul li span img {
+    width: 15px;
+    height: 15px;
+}
+
+.control-panel__item ul li a {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #a0aec0;
+}
+
+.control-panel__item ul {
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-panel__item ul li {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.control-panel__item .documentation
+{
+    margin-top: 69px;
+}
+
+.control-panel__item ul li:first-child {
+    margin-top: 30px;
+}
+
+.control-panel--title {
+    margin-top: 30px;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #2d3748;
+    text-transform: uppercase;
+}
+
+.control-panel__subtitle {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: #2d3748;
+    text-align: center;
+}
+
+.control-panel__button {
+    text-transform: uppercase;
+    padding: 10px 8px;
+    background-color: #3182CE;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    margin: 38px 0px 17px 0px;
+    color: #fff;
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10px;
+}
+
+.mastercard {
+    margin-left: 19px;
+    background-image: url("../images/background/mastercard.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 461px;
+    height: 241px;
+    color: #fff;
+}
+
+.mastercard__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+}
+
+.mastercard__image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mastercard__image img {
+    width: 50px;
+    height: auto;
+}
+
+.mastercard__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mastercard--number {
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+}
+
+.mastercard__tabs {
+    display: flex;
+    gap: 22px;
+}
+
+.mastercard__valid, .mastercard__cvv {
+    display: flex;
+    flex-direction: column;
+}
+
+.mastercard__valid span:first-child, 
+.mastercard__cvv span:first-child {
+    font-family: Helvetica;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.mastercard__valid span:last-child, 
+.mastercard__cvv span:last-child {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+}
