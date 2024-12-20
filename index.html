@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 </div>
                 <div class="controls__actions actions">
                     <img src="/images/icons/icon-header-user.png" width="12" height="12" alt="user">
-                    <a href="#" class="actions__link">Войти</a>
+                    <a href="#" class="actions__link" id="button-modal">Войти</a>
                     <button class="actions__button settings">
                         <img src="/images/icons/icon-header-setting.png" alt="#">
                     </button>
@@ -73,7 +74,7 @@
                 </div>
             </div>
         </aside>
-        <section class="mastercard">
+        <section class="mastercard height-section">
             <div class="mastercard__container">
                 <div class="mastercard__image">
                     <img src="images/icons/icon-left-panel-circles.png" alt="logo">
@@ -94,8 +95,129 @@
                     </div>
                 </div>
             </div>
+
+            <div class="payment__container">
+                <div class="payment__header">
+                    <h2>Способ оплаты</h2>
+                    <button>ДОБАВИТЬ</button>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <div class="card-info">
+                            <img src="images/icons/icon-middle-panel-mastercard.png" width="21" height="13.26" alt="MasterCard">
+                            7812 2139 0823 XXXX
+                        </div>
+                        <div class="edit-btn"><img src="images/icons/icon-middle-panel-pencil.png" width="12" height="12" alt="#"></div>
+                    </div>
+                    <div class="payment-card">
+                        <div class="card-info">
+                            <img src="images/icons/icon-middle-panel-visa.png" width="24.5" height="8.52" alt="Visa">
+                            7812 2139 0823 XXXX
+                        </div>
+                        <div class="edit-btn"><img src="images/icons/icon-middle-panel-pencil.png" width="12" height="12" alt="#"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="height-section">
+            <div class="card__container">
+                <div class="card">
+                    <div class="active-icon">
+                        <img src="images/icons/icon-top-panel-zarplata.png" width="26" height="26" alt="Иконка">
+                    </div>
+                    <div class="card-title">Зарплата</div>
+                    <div class="card-subtitle">Интерактивное принадлежaщее</div>
+                    <div class="card-amount">+ 20.000₽</div>
+                </div>
+                <div class="card">
+                    <div class="active-icon">
+                        <img src="images/icons/icon-top-panel-paypal.png" width="17" height="20" alt="Иконка">
+                    </div>
+                    <div class="card-title">Счет</div>
+                    <div class="card-subtitle">Фриланс</div>
+                    <div class="card-amount">455.00₽</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="amount__container">
+                <div class="amount__header">
+                    <h2>Счета</h2>
+                    <button>ПОСМОТРЕТЬ ВСЕ</button>
+                </div>
+                <ul class="invoice-list">
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Март, 01, 2020<br><span>#MS-415646</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽180 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Февраль, 10, 2021<br><span>#RV-126749</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽250 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Апрель, 05, 2020<br><span>#FB-212562</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽560 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Июнь, 25, 2019<br><span>#QW-103578</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽120 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Март, 01, 2019<br><span>#AR-803481</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽300 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
+
+    <div class="modal__overlay">
+        <div class="user-modal">
+            <div class="user-modal__header">
+                <h2 class="user-modal__header--title">Авторизация</h2>
+                <span class="user-modal__header--close">
+                    <img src="./images/icons/close.svg" alt="close">
+                </span>
+            </div>
+            <div class="user-modal__body">
+                <form class="auth-form">
+                    <div class="auth-form__group">
+                        <label for="username" class="auth-form__label">Логин</label>
+                        <input type="text" id="username" class="auth-form__input" placeholder="Введите ваш логин" required>
+                    </div>
+                    <div class="auth-form__group">
+                        <label for="password" class="auth-form__label">Пароль</label>
+                        <input type="password" id="password" class="auth-form__input" placeholder="Введите ваш пароль" required>
+                    </div>
+                    <button type="submit" class="auth-form__submit">Войти</button>
+                    <p class="auth-form__footer">
+                        Нет аккаунта? <a href="#" class="auth-form__link">Зарегистрироваться</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>

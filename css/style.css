@@ -5,9 +5,10 @@
 }
 
 body {
-    background: linear-gradient(to top, #FFFFFF 65%, #3182CE 45%);
+    background: linear-gradient(to top, #F7FAFC 65%, #3182CE 45%);
     height: 100vh;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 a {
@@ -315,4 +316,339 @@ main {
     font-size: 14px;
     font-weight: 600;
     line-height: 19.6px;
+}
+
+.card__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 24px;
+    gap: 24px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 240px;
+    height: 240px;
+    color: #2d3748;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.active-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #3182CE;
+    box-shadow: 0px 3px 5px #00000005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 30px 0px 22px 0px;
+}
+
+.card-title {
+    margin-bottom: 5px;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+}
+
+.card-subtitle {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 27px;
+    color: #a0aec0;
+}
+
+.card-amount {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+}
+
+.amount__container {
+    background-color: white;
+    border-radius: 10px;
+    width: 572px;
+    height: 436px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.amount__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.amount__header h2 {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: #2d3748;    
+}
+
+.amount__header button {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 10px 12px;
+    cursor: pointer;
+    font-family: Helvetica;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+.amount__header button:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.invoice-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.invoice-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.invoice-item:last-child {
+    border-bottom: none;
+}
+
+.invoice-info {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: #2d3748;    
+}
+
+.invoice-info span {
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #a0aec0;    
+}
+
+.invoice-right {
+    display: flex;
+    text-align: right;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a0aec0;    
+}
+
+.invoice-right span {
+    margin-left: 16px;
+}
+
+.invoice-right a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #2d3748;
+}
+
+.invoice-right a:hover {
+    text-decoration: underline;
+}
+
+.payment__container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 990px;
+    height: 172px;
+    box-shadow: 0 5px 15px #0000000D;
+    margin-top: 23px;
+}
+
+.payment__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.payment__header h2 {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    color: #2D3748;
+}
+
+.height-section {
+    height: 240px;
+}
+
+.payment__header > button {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 10px;
+    background-color: #2D3748;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.payment__header button:hover {
+    background-color: #141414;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 20px;
+}
+
+.payment-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #a0aec0;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.payment-card .card-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.modal__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.40);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__overlay.open {
+    display: flex;
+}
+
+.user-modal {
+    font-family: Helvetica;
+    max-width: 780px;
+    width: 100%;
+    padding: 40px 45px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.user-modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.user-modal__header--title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.user-modal__header--close {
+    cursor: pointer;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auth-form__label {
+    font-size: 16px;
+    color: #333;
+}
+
+.auth-form__input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.auth-form__input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.auth-form__submit {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-form__submit:hover {
+    background-color: #0056b3;
+}
+
+.auth-form__footer {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.auth-form__link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.auth-form__link:hover {
+    text-decoration: underline;
 }
