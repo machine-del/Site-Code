@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header-box">
+                <nav class="header__breadcrumbs breadcrumbs">
+                    <a href="#" class="breadcrumbs__link">Страницы</a>
+                    <span class="breadcrumbs__separator">/</span>
+                    <a href="#" class="breadcrumbs__link">Выставление счетов</a>
+                </nav>
+                <h1 class="header__title">Выставление счетов</h1>
+            </div>
+            <div class="header__controls controls">
+                <div class="control__search">
+                    <span class="search__icon"></span>
+                    <input type="text" class="search__input" placeholder="Введите" />
+                </div>
+                <div class="controls__actions actions">
+                    <img src="/images/icons/icon-header-user.png" width="12" height="12" alt="user">
+                    <a href="#" class="actions__link">Войти</a>
+                    <button class="actions__button settings">
+                        <img src="/images/icons/icon-header-setting.png" alt="#">
+                    </button>
+                    <button class="actions__button notifications">
+                        <img src="/images/icons/icon-header-notifications.png" alt="#">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="control-panel">
+            <div class="control-panel__container">
+                <div class="control-panel__info">
+                    <div class="control-panel__item">
+                        <nav>
+                            <ul>
+                                <li><span class="active-img"><img src="/images/icons/icon-left-panel-home.png" alt="#"></span><a href="#" class="active">Панель управления</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-chart.png" alt="#"></span><a href="#">Таблицы</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-card.png" alt="#"></span><a href="#">Выставление счетов</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-build.png" alt="#"></span><a href="#">RTL</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="control-panel__item">
+                        <div class="control-panel--title">
+                            <h4>Страницы аккаунта</h4>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><span><img src="/images/icons/icon-left-panel-user.png" alt="#"></span><a href="#">Профиль</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-document.png" alt="#"></span><a href="#">Войти</a></li>
+                                <li><span><img src="/images/icons/icon-left-panel-rocket.png" alt="#"></span><a href="#">Зарегистрироваться</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="control-panel__item">
+                        <img class="documentation" src="images/icons/icon-left-panel-documentation.png" alt="#">
+                        <a href="#" class="control-panel__subtitle">Нужна помощь?</a>
+                        <button class="control-panel__button">Документация</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <section class="mastercard">
+            <div class="mastercard__container">
+                <div class="mastercard__image">
+                    <img src="images/icons/icon-left-panel-circles.png" alt="logo">
+                </div>
+                <div class="mastercard__item">
+                    <div class="mastercard--number">
+                        7812 2139 0823 XXXX
+                    </div>
+                    <div class="mastercard__tabs">
+                        <div class="mastercard__valid">
+                            <span>Действителен до</span>
+                            <span>05/24</span>
+                        </div>
+                        <div class="mastercard__cvv">
+                            <span>CVV</span>
+                            <span>09X</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
