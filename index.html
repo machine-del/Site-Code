@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="header__container">
             <div class="header-box">
                 <nav class="header__breadcrumbs breadcrumbs">
@@ -27,7 +28,7 @@
                 </div>
                 <div class="controls__actions actions">
                     <img src="/images/icons/icon-header-user.png" width="12" height="12" alt="user">
-                    <a href="#" class="actions__link">Войти</a>
+                    <a href="#" class="actions__link" id="button-modal">Войти</a>
                     <button class="actions__button settings">
                         <img src="/images/icons/icon-header-setting.png" alt="#">
                     </button>
@@ -40,7 +41,7 @@
     </header>
     
     <main>
-        <section class="control-panel">
+        <aside class="control-panel">
             <div class="control-panel__container">
                 <div class="control-panel__info">
                     <div class="control-panel__item">
@@ -55,7 +56,7 @@
                     </div>
                     <div class="control-panel__item">
                         <div class="control-panel--title">
-                            Страницы аккаунта
+                            <h4>Страницы аккаунта</h4>
                         </div>
                         <nav>
                             <ul>
@@ -67,39 +68,274 @@
                     </div>
                     <div class="control-panel__item">
                         <img class="documentation" src="images/icons/icon-left-panel-documentation.png" alt="#">
-                        <div class="control-panel__subtitle">Нужна помощь?</div>
+                        <a href="#" class="control-panel__subtitle">Нужна помощь?</a>
                         <button class="control-panel__button">Документация</button>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="mastercard">
+        </aside>
+        <section class="mastercard height-section">
             <div class="mastercard__container">
-                <div class="mastercard__box">
-                    <div class="mastercard__info">
-                        <div class="mastercard__image">
-                            <img src="images/icons/icon-left-panel-circles.png" alt="">
+                <div class="mastercard__image">
+                    <img src="images/icons/icon-left-panel-circles.png" alt="logo">
+                </div>
+                <div class="mastercard__item">
+                    <div class="mastercard--number">
+                        7812 2139 0823 XXXX
+                    </div>
+                    <div class="mastercard__tabs">
+                        <div class="mastercard__valid">
+                            <span>Действителен до</span>
+                            <span>05/24</span>
                         </div>
-                        <div class="mastercard__item">
-                            <div class="mastercard--number">
-                                7812 2139 0823 XXXX
-                            </div>
-                            <div class="mastercard__tabs">
-                                <div class="mastercard__valid">
-                                    <span>Действителен до</span>
-                                    <span>05/24</span>
-                                </div>
-                                <div class="mastercard__cvv">
-                                    <span>cvv</span>
-                                    <span>09X</span>
-                                </div>
-                            </div>
+                        <div class="mastercard__cvv">
+                            <span>CVV</span>
+                            <span>09X</span>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="payment__container">
+                <div class="payment__header">
+                    <h2>Способ оплаты</h2>
+                    <button>ДОБАВИТЬ</button>
+                </div>
+                <div class="payment-methods">
+                    <div class="payment-card">
+                        <div class="card-info">
+                            <img src="images/icons/icon-middle-panel-mastercard.png" width="21" height="13.26" alt="MasterCard">
+                            7812 2139 0823 XXXX
+                        </div>
+                        <div class="edit-btn"><img src="images/icons/icon-middle-panel-pencil.png" width="12" height="12" alt="#"></div>
+                    </div>
+                    <div class="payment-card">
+                        <div class="card-info">
+                            <img src="images/icons/icon-middle-panel-visa.png" width="24.5" height="8.52" alt="Visa">
+                            7812 2139 0823 XXXX
+                        </div>
+                        <div class="edit-btn"><img src="images/icons/icon-middle-panel-pencil.png" width="12" height="12" alt="#"></div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <section class="height-section">
+            <div class="card__container">
+                <div class="card">
+                    <div class="active-icon">
+                        <img src="images/icons/icon-top-panel-zarplata.png" width="26" height="26" alt="Иконка">
+                    </div>
+                    <div class="card-title">Зарплата</div>
+                    <div class="card-subtitle">Интерактивное принадлежaщее</div>
+                    <div class="card-amount">+ 20.000₽</div>
+                </div>
+                <div class="card">
+                    <div class="active-icon">
+                        <img src="images/icons/icon-top-panel-paypal.png" width="17" height="20" alt="Иконка">
+                    </div>
+                    <div class="card-title">Счет</div>
+                    <div class="card-subtitle">Фриланс</div>
+                    <div class="card-amount">455.00₽</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="amount__container">
+                <div class="amount__header">
+                    <h2>Счета</h2>
+                    <button>ПОСМОТРЕТЬ ВСЕ</button>
+                </div>
+                <ul class="invoice-list">
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Март, 01, 2020<br><span>#MS-415646</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽180 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Февраль, 10, 2021<br><span>#RV-126749</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽250 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Апрель, 05, 2020<br><span>#FB-212562</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽560 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Июнь, 25, 2019<br><span>#QW-103578</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽120 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                    <li class="invoice-item">
+                        <div class="invoice-info">
+                            Март, 01, 2019<br><span>#AR-803481</span>
+                        </div>
+                        <div class="invoice-right">
+                            ₽300 <span><img src="images/icons/icon-right-panel-pdf.png" alt="#"></span> <a href="#">PDF</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="info-sums">
+            <h1 class="info-sums-h">Информация о выставлении счетов</h1>
+            <div class="info-sums-block">
+                <div class="info-sums-up">
+                    <h3 class="info-sums-name">Оливер Лиам</h3>
+                    <div class="info-sums-right">
+                        <img src="/images/icons/icon-bottom-panel-cart.png" width="12" height="12" alt="user">
+                        <p class="info-sums-right-text">УДАЛИТЬ</p>
+                        <img src="/images/icons/icon-bottom-panel-edit.png" width="12" height="12" alt="user">
+                    </div>
+                </div>
+                <p class="info-sums-text">
+                    Название компании: Викинг Буррито
+                    Адрес электронной почты: oliver@burrito.com
+                    Номер НДС: FRB1235476
+                </p>
+            </div>
+            <div class="info-sums-block">
+                <div class="info-sums-up">
+                    <h3 class="info-sums-name">Оливер Лиам</h3>
+                    <div class="info-sums-right">
+                        <img src="/images/icons/icon-bottom-panel-cart.png" width="12" height="12" alt="user">
+                        <p class="info-sums-right-text">УДАЛИТЬ</p>
+                        <img src="/images/icons/icon-bottom-panel-edit.png" width="12" height="12" alt="user">
+                    </div>
+                </div>
+                <p class="info-sums-text">
+                    Название компании: Викинг Буррито
+                    Адрес электронной почты: oliver@burrito.com
+                    Номер НДС: FRB1235476
+                </p>
+            </div>
+            <div class="info-sums-block">
+                <div class="info-sums-up">
+                    <h3 class="info-sums-name">Оливер Лиам</h3>
+                    <div class="info-sums-right">
+                        <img src="/images/icons/icon-bottom-panel-cart.png" width="12" height="12" alt="user">
+                        <p class="info-sums-right-text">УДАЛИТЬ</p>
+                        <img src="/images/icons/icon-bottom-panel-edit.png" width="12" height="12" alt="user">
+                    </div>
+                </div>
+                <p class="info-sums-text">
+                    Название компании: Викинг Буррито
+                    Адрес электронной почты: oliver@burrito.com
+                    Номер НДС: FRB1235476
+                </p>
+            </div>
+        </section>
+        <section class="tranzactions">
+            <div class="tranzactions-blocks">
+                <div class="tranzactions-header">
+                    <h3 class="tranzactions-header-left">Ваши транзакции</h3>
+                    <p class="tranzactions-header-right">23 - 30 марта 2020 года</p>
+                </div>
+                <div class="tranzactions-block">
+                    <p class="tranzactions-time-text">САМЫЙ НОВЫЙ</p>
+                    <div class="tranzactions-block-down">
+                        <img src="/images/icons/icon-bottom-panel-down.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">Яндекс</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-down">-2500P</p>
+                    </div>
+                    <div class="tranzactions-block-up">
+                        <img src="/images/icons/icon-bottom-panel-up.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">Газпром</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-up">+2500P</p>
+                    </div>
+                </div>
+                <div class="tranzactions-block">
+                    <p class="tranzactions-time-text">ВЧЕРА</p>
+                    <div class="tranzactions-block-up">
+                        <img src="/images/icons/icon-bottom-panel-up.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">Страйп</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-up">+800P</p>
+                    </div>
+                    <div class="tranzactions-block-up">
+                        <img src="/images/icons/icon-bottom-panel-up.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">ВК</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-up">+1700P</p>
+                    </div>
+                    <div class="tranzactions-block-down">
+                        <img src="/images/icons/icon-bottom-panel-warning.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">Кион</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-midle">В ожидании</p>
+                    </div>
+                    <div class="tranzactions-block-down">
+                        <img src="/images/icons/icon-bottom-panel-down.png" alt="">
+                        <div class="tranzactions-block-text">
+                            <h5 class="tranzactions-title-text-up">Тинькофф</h5>
+                            <p class="tranzactions-title-text-down">27 марта 2020 года, в 12:30 часов</p>
+                        </div>
+                        <p class="price-down">-987P</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
+    <footer>
+        <div class="footer-right">
+            <p class="footer-text footer-text-1">Творческое время</p>
+            <p class="footer-text">Блог</p>
+            <p class="footer-text">Лицензия</p>
+        </div>
+    </footer>
+
+    <div class="modal__overlay">
+        <div class="user-modal">
+            <div class="user-modal__header">
+                <h2 class="user-modal__header--title">Авторизация</h2>
+                <span class="user-modal__header--close">
+                    <img src="./images/icons/close.svg" alt="close">
+                </span>
+            </div>
+            <div class="user-modal__body">
+                <form class="auth-form">
+                    <div class="auth-form__group">
+                        <label for="username" class="auth-form__label">Логин</label>
+                        <input type="text" id="username" class="auth-form__input" placeholder="Введите ваш логин" required>
+                    </div>
+                    <div class="auth-form__group">
+                        <label for="password" class="auth-form__label">Пароль</label>
+                        <input type="password" id="password" class="auth-form__input" placeholder="Введите ваш пароль" required>
+                    </div>
+                    <button type="submit" class="auth-form__submit">Войти</button>
+                    <p class="auth-form__footer">
+                        Нет аккаунта? <a href="#" class="auth-form__link">Зарегистрироваться</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 </html>
