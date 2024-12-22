@@ -140,6 +140,7 @@ header {
 main {
     margin: 37px 0px 0px 20px;
     display: flex;
+    height: 100%;
 }
 
 .control-panel {
@@ -374,11 +375,14 @@ main {
     line-height: 25.2px;
 }
 
+.height-amount {
+    height: 436px;
+}
+
 .amount__container {
     background-color: white;
     border-radius: 10px;
     width: 572px;
-    height: 436px;
     border-radius: 20px;
     padding: 20px;
 }
@@ -478,7 +482,7 @@ main {
 .payment__container {
     background-color: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     width: 990px;
     height: 172px;
     box-shadow: 0 5px 15px #0000000D;
@@ -651,4 +655,207 @@ main {
 
 .auth-form__link:hover {
     text-decoration: underline;
+}
+
+.info-sums-h {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    margin-left: 21px;
+    margin-top: 28px;
+    color: #2D3748;
+}
+
+.footer__container {
+    display: flex;
+}
+
+.footer__box {
+    display: flex;
+    margin-top: 24px;
+}
+
+.info-sums {
+    width: 900px;
+    height: 538px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.info-sums-block {
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 13px;
+    width: 855px;
+    height: 132.5px;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    margin-left: 21px;
+    margin-top: 24px;
+}
+
+.info-sums-up {
+    display: flex;
+}
+
+.info-sums-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.info-sums-right-text {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #E53E3E;
+    margin-left: 3.5px;
+    margin-right: 12px;
+    top: 5px;
+}
+
+.info-sums-name {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color:#718096;
+}
+
+.info-sums-text {
+    width: 266px;
+    margin-top: 7px;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #A0AEC0;
+}
+
+.tranzactions-blocks {
+    width: 660px;
+    height: 538px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 28px;
+}
+
+.tranzactions-header {
+    display: flex;
+    margin-bottom: 17.5px;
+}
+
+.tranzactions-header-left {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2D3748;
+}
+
+.tranzactions-header-right {
+    margin-left: auto;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A0AEC0;
+    margin-top: 4px;
+}
+
+.tranzactions-time-text {
+    font-family: Helvetica;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #A0AEC0;
+    margin-bottom: 17.5px;
+}
+
+.tranzactions-block-up {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tranzactions-block-down {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.tranzactions-block-text {
+    margin-left: 14px;
+    margin-top: 4px;
+}
+
+.tranzactions-title-text-up {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2D3748;
+    margin-bottom: 5px;
+}
+
+.tranzactions-title-text-down {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #A0AEC0;
+}
+
+.price-down {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    color: #E53E3E;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.price-midle {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #2D3748;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+.price-up {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    color: #48BB78;
+    margin-left: auto;
+    margin-top: 16px;
+}
+
+footer {
+    display: flex;
+}
+
+.footer-right {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 32px;
+    margin-left: auto;
+}
+
+.footer-text {
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #A0AEC0;
+}
+
+.footer-text{
+    margin-left: 36px;
 }
