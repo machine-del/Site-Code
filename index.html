@@ -28,12 +28,13 @@
                 </div>
                 <div class="controls__actions actions">
                     <img src="/images/icons/icon-header-user.png" width="12" height="12" alt="user">
-                    <a href="#" class="actions__link" id="button-modal">Войти</a>
+                    <a href="#" class="actions__link button-modal">Войти</a>
                     <button class="actions__button settings">
                         <img src="/images/icons/icon-header-setting.png" alt="#">
                     </button>
-                    <button class="actions__button notifications">
+                    <button class="actions__button notifications button-modal">
                         <img src="/images/icons/icon-header-notifications.png" alt="#">
+                        <div class="countNotification">0</div>
                     </button>
                 </div>
             </div>
@@ -329,6 +330,7 @@
                 </span>
             </div>
             <div class="user-modal__body">
+                <div class="message"></div>
                 <form class="auth-form">
                     <div class="auth-form__group">
                         <label for="username" class="auth-form__label">Логин</label>
@@ -336,7 +338,7 @@
                             required>
                     </div>
                     <div class="auth-form__group">
-                        <label for="password" class="auth-form__label">Пароль</label>
+                        <label for="password" class="auth-form__label password">Пароль</label>
                         <input type="password" id="password" class="auth-form__input" placeholder="Введите ваш пароль"
                             required>
                     </div>
